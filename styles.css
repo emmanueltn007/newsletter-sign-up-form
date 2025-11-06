@@ -72,7 +72,7 @@ form > .alert-message {
 
 input {
     border: 1px hsl(0, 0%, 50%) solid;
-    padding: 1em 0.25em;
+    padding: 1em 0.25em 1em 1em;
     border-radius: 0.5em;
     margin-bottom: 1.5em;
 }

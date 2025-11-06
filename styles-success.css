@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: hsl(234, 29%, 20%);
+    font-family: "Roboto", sans-serif;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 2.5em 1.75em;
+    width: 30%;
+    border-radius: 1em;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+button {
+    font-weight: 700;
+    color: white;
+    padding: 1em;
+    background-color: hsl(235, 18%, 26%);
+    border-radius: 0.5em;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(50deg, hsl(4, 100%, 67%), orange);
+    box-shadow: hsl(4, 100%, 63%) 0px 20px 30px -10px;
+}
+
