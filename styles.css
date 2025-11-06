@@ -5,55 +5,104 @@
 }
 
 body {
-    max-width: 1440px;
+    color: hsl(234, 29%, 20%);
     font-family: "Roboto", sans-serif;
-    background-color: hsl(235, 18%, 26%);
+    background-color: hwb(235 21% 69%);
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em;
-    border-radius: 0.5em;
     background-color: white;
+    display: grid;
+    grid-template-columns: 25em 20em;
+    padding: 1.5em;
+    border-radius: 1em;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    padding: 4em;
+    gap: 2.5em;
+    padding: 1.5em;
+}
+
+.main-content p {
+    font-size: 16px;
+}
+
+.main-content h1 {
+    font-size: 3em;
 }
 
 ul {
-    list-style: none;
+    list-style-image: url("assets/images/icon-list.svg");
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+li > p {
+    text-align: center;
 }
 
 form {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
 
+label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+form > .alert-message {
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    color: hsl(4, 100%, 63%);
+}
+
 input {
-    padding: 1em;
+    border: 1px hsl(0, 0%, 50%) solid;
+    padding: 1em 0.25em;
     border-radius: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+input:focus {
+    outline: none;
 }
 
 button {
-    margin-top: 1.5em;
-    background-color: hsl(234, 29%, 20%);
     color: white;
+    font-weight: 700;
+    padding: 1em 0.5em;
+    background-color: hsl(234, 29%, 20%);
     border: none;
-    padding: 1em;
     border-radius: 0.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, hsl(4, 100%, 63%), rgb(198, 96, 0));
+    box-shadow: hsl(4, 100%, 63%) 0px 20px 30px -10px;
 }
 
 .cover-container {
-    width: 40em;
-    background-image: url("assets/images/illustration-sign-up-desktop.svg");
+    border-radius: 0.75em;
+    background: url("assets/images/illustration-sign-up-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
